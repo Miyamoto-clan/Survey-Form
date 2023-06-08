@@ -1,0 +1,130 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>freeCodeCamp Survey Form</title> 
+    <link rel="stylesheets" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Please share your thoughts and   feedback. Your input is valuable and will help us improve our services.</p>
+    <form method="post" action="https://survey-demo.freecodecamp.org" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" >Name <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="number" id="number-label">Age (optional) <input id="number" name="number" type="number" placeholder="Age" min="13" max="120" /></label>
+        <label for="role">What best describes your current role?<select id="dropdown" name="dropdown" required>
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Fullt Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p id="recommend-p">Do you recommend this free course to others?</p>
+        <label for="absolutely"><input id="absolutely" name="recommend" type="radio" value="absolutly" class="inline" value="Absolutelly" checked>Absolutely</label>
+        <label for="dubiously"><input id="dubiously" name="recommend" type="radio" value="dubiously" class="inline">Dubiously</label>
+        <label for="not-sure"><input id="not-sure" name="recommend" type="radio" value="not-sure" class="inline">Not sure</label>
+      </fieldset>
+      <fieldset>
+        <p id=improvements-p>What would like to see improved?</p>
+        <label for="front-end"><input id="front-end" name="front-end" type="checkbox" value="front-end" class="courses" />Front-end courses</label>
+        <label for="back-end"><input id="back-end" name="back-end" type="checkbox" value="back-end" class="courses" />Back-end courses</label>
+        <label for="javascript"><input id="javascript" name="javascript" type="checkbox" value="javascript" class="courses" />JavaScript courses</label>
+        <label for="cryptography"><input id="cryptography" name="cryptography" type="checkbox" value="cryptography" class="courses" />Cryptography courses</label>
+        <label for="bitcoin"><input id="bitcoin" name="bitcoin" type="checkbox" value="bitcoin" class="courses" />Bitcoin courses</label> 
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments or suggestions?<textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comments or suggestions here..." required>
+          </textarea>
+          </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+<html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px; 100%;  
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center; 
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline, .courses {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input {
+  padding: 1px 2px;
+}
+
+** end of undefined **
+
